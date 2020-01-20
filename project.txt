@@ -1,0 +1,18 @@
+Project Description:
+We’re interested in analyzing whether portfolios that have a positive return in a period are usually followed by a period of negative returns. In addition, we’re also interested how concentrated these periods’ returns are. Return concentration is defined by the top N strategies’ contribution to the total of all strategies with positive returns, for a given period. Strategies are just position groupings within a portfolio. In order to do this, you need to:
+    
+Look at the portfolio’s return on rolling basis with a certain “window” period. The period window should be a parameter to the program. For the report, just use one month.
+Select periods that had positive returns and are non-overlapping.
+For each period, compute the return and return concentration. You could use top 5 strategies for the concentration but ideally this should be a parameter to your program.
+Compare this period’s statistics with the next consecutive period’s statistics. For example, period1 1/1/2019 – 2/1/2019 should be  compared with period2 2/2/2019 – 3/2/2019 (assuming monthly periods).
+
+Write a Python program that does the above analysis in the provided input data. Our main goal is to assess your coding skills. Therefore, we encourage you to pay special attention to coding style: use of adequate comments where necessary, readability, abstraction, and modular design. Feel free to use any Python libraries: pandas, numpy, etc.
+
+The input data are in the provided Excel workbook. It has two sheets:
+
+“Strategy PnL” contains the P&L time series data for the various strategies in the portfolio. 
+“Allocated Capital” contains the time series data of the portfolio’s allocated capital. 
+
+All returns should be computed based on allocated capital (i.e. return = P&L / Allocated Capital). Create a report in Excel with the result of the analysis. The report should include columns for period dates, period return, average allocated capital for the period, return concentration (as defined above). You don’t have to draw any conclusions, although if you want to, we would strongly encourage you to do so. However, the report should be well formatted and nicely presented. Please send us your code and Excel report and include any special instruction needed to run your code. If you have any questions, please let us know.
+
+
